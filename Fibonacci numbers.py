@@ -5,3 +5,7 @@ def fib(n):
     else:
         d[n] = fib(n-1) + fib(n-2)
         return d[n]
+
+with open('rosalind_fibo.txt') as f:
+    n = int(f.readline())
+print(fib(n))
