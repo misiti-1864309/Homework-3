@@ -7,9 +7,3 @@ def InsertionSort(A, n):
             k -= 1
             swaps += 1
     return swaps
-
-with open('rosalind_ins.txt') as f:
-    n = int(f.readline())
-    A = list(map(int, f.readline().split()))
-
-print(InsertionSort(A,n))
